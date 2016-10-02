@@ -1,0 +1,1 @@
+  % Plot the data  %{  hold off;  palette = hsv(k + 1);  colors = palette(assignment, :);  scatter(docs(:,1), docs(:,2), 15, colors);  hold on;  plot(centroids(:,1), centroids(:,2), 'x', ...     'MarkerEdgeColor','k', ...     'MarkerSize', 10, 'LineWidth', 3);  %}

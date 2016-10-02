@@ -1,0 +1,1 @@
+function l = loadLinks(filename, numNodes)    fprintf('loading links...');    links = load(filename);    numLinks = size(links,1);    l = zeros(numNodes, numNodes);    for i=1:numLinks        l(links(i,2), links(i,1) )=1;        printProgress(i,numLinks);    end		fprintf('\nloading links...[ok]\n');	end

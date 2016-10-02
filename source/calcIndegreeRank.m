@@ -1,0 +1,1 @@
+function r = calcIndegreeRank(profiles)   % calculate the ranking based just on num followers  r= profiles(:,3);  r= r./sum(r);end
